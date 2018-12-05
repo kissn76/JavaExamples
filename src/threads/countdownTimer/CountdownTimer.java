@@ -14,15 +14,15 @@ public class CountdownTimer extends Application {
 
         FXMLLoader loader = new FXMLLoader(getClass().getResource("mainpane.fxml"));
         Parent root = loader.load();
-//        MainViewController controller = loader.getController();
+        // MainViewController controller = loader.getController();
         Scene scene = new Scene(root);
 
         primaryStage.setScene(scene);
-//        primaryStage.setOnHidden(e -> {
-//            controller.shutdown();
-//            Platform.exit();
-//        });
-        primaryStage.setResizable(true);
+        // primaryStage.setOnHidden(e -> {
+        // controller.shutdown();
+        // Platform.exit();
+        // });
+        primaryStage.setResizable(false);
         primaryStage.sizeToScene();
         primaryStage.show();
     }
